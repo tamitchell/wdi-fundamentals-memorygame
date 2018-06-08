@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Memory Card Game</title>
+    <meta name="description" content="Memory Card Game">
+    <meta name="author" content="Tasha Mitchell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Raleway:400,500,600,700" rel="stylesheet">
+<style>
+      
+body {
+    margin:0;    
+    text-align: center;
+}
+
+header {
+    background-color: #F15B31;
+    padding: 30px 20px 30px 20px;
+}
+
+
+h1 {
+font-family: "raleway", sans-serif;
+color: white;
+letter-spacing: 1px;
+font-weight: 500;
+font-size: 45px;
+text-transform: uppercase;
+margin:0;
+}
+
+    p {
+    font-family: "Droid Serif", serif;
+    line-height: 26px;
+    font-size: 18px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+nav {
+    background-color: #00A6B3;
+    padding: 10px;
+        }    
+
+nav a {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    margin: 0 20px 0 20px;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    border-color: white;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: "Raleway";
+    color: #0D2C40;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+main {
+    width: 850px;
+    margin: 35px 0 35px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    margin: 40px 8px 0 8px;
+}
+
+footer {
+    text-transform:uppercase;
+    padding: 0 20px 0 20px;
+    background-color: #0D2C40;
+    color: white;
+    font-size:14px;
+    letter-spacing: .08em;
+    font-weight: 500;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    content: " ";
+    clear: both;
+    height: 0;
+    font-size:0;
+}
+
+.copyright {
+    float: left;
+}
+
+.message {
+    float: right;
+}
+
+.name {
+    color:#F15B31;
+}
+</style>
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header>
+        <h1>Memory Game</h1>
+    </header>
+
+
+    <nav>
+        <a href="#Intructions">Instructions</a>
+        <a href="#Game">Game</a>
+    </nav>
+
+    <main>
+
+        <h2 id="Instructions">Instructions</h2>
+        <p>
+            Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-suijaku, Pexeso or simply Pairs, is a card game in which
+            all of the cards are laid face down on a surface and two cards are flipped face up over each turn. The object
+            of the game is to turn over pairs of matching cards.
+        </p>
+
+        <!--Start Memory Cards-->
+
+        <div id="Game">
+            <img src="images/back.png" alt="Queen of Diamonds">
+            <img src="images/back.png" alt="Queen of Hearts">
+            <img src="images/back.png" alt="Kind of Diamonds">
+            <img src="images/back.png" alt="King of Hearts">
+        </div>
+
+        <!--END Memory Cards-->
+    </main>
+
+    <footer class="clearfix">
+        <p class="copyright">Copyright 2017
+        </p>
+        <p class="message">
+            Created with &hearts; by <span class="name">GA</span>
+
+        </p>
+    </footer>
+    <script src="main.js" async defer>
+
+    </script>
+</body>
+
+</html>
