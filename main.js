@@ -27,30 +27,34 @@ var cards = [
 ];
     var cardsInPlay = [];
 
-    function checkForMatch(){
-       if (cardsInPlay[0] === cardsInPlay[1]) {
-          console.log("You found a match!");
-        }
-        else {
-         console.log("Sorry, try again!");
-        }
-      }
+    var checkForMatch = function(){
+      if (cardsInPlay[0] === cardsInPlay[2]) {
+         alert("You found a match!");
+       }
+       else {
+        alert("Sorry, try again!");
+       }
+     }
+
+    var flipCard = function(cardId) {
+
+      console.log("User flipped " + cards[cardId].rank);
+      cardsInPlay.push(cards[cardId].rank);
     
-    function flipCard(cardId) {
-      var cardOne;
-      var cardTwo;
-          
+      console.log(cards[cardId].cardImage);
+      console.log(cards[cardId].suit);
+
       if (cardsInPlay.length === 2) {
-        console.log("User flipped " + cards[cardId].rank);
-        cardsInPlay.push(cards[cardId].rank);
-        console.log(cards[cardId].cardImage);
-        console.log(cards[cardId].suit);
-        checkForMatch();
-        }
-      
+        checkForMatch(); 
+      }
 
     }
 
-    console.log("User flipped " + cards[0].rank);
+    flipCard(0);
+    flipCard(2);
+
+    
+    
+
 
 
