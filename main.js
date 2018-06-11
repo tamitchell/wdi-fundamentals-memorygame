@@ -33,12 +33,12 @@ var cards = [
       if (cardsInPlay[0] === cardsInPlay[1]) {
          alert("You found a match!");
          resetCards();
-         shuffle();
+         shuffleCards();
        }
        else {
         alert("Sorry, try again!");
        resetCards();
-       shuffle();
+       shuffleCards();
       }
      }
 
@@ -46,6 +46,19 @@ var cards = [
       cardsInPlay = [];
       flippedCard.pop().setAttribute("src", "images/back.png");
       flippedCard.pop().setAttribute("src", "images/back.png");
+     }
+
+
+     var shuffleCards = function () {
+       var i = cards.length, j, temp;
+       while (--i > 0) {
+         j = Math.floor(Math.random() * (i+1));
+         temp = cards[j];
+         cards[j] = cards[i];
+         cards[i] = temp; 
+       }
+
+       return cards;
      }
 
     var flipCard = function() {
